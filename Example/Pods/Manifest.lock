@@ -1,0 +1,16 @@
+PODS:
+  - MediastreamPlatformSDKxC (0.1.0)
+
+DEPENDENCIES:
+  - MediastreamPlatformSDKxC (from `../`)
+
+EXTERNAL SOURCES:
+  MediastreamPlatformSDKxC:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MediastreamPlatformSDKxC: 0496e5c2769293b7a6430f00c4340cabaa306eb8
+
+PODFILE CHECKSUM: 3b74e983872c8095c9764119ba03d9c561aeb47d
+
+COCOAPODS: 1.10.1

@@ -8,35 +8,26 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MediastreamPlatformSDKxC'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of MediastreamPlatformSDKxC.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.version          = '1.1.12'
+  s.summary          = 'MediastreamPlatformSDKiOSxC.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  Platform SDK solution for development on mobiles.
+  DESC
 
-  s.homepage         = 'https://github.com/Carlos Ruiz/MediastreamPlatformSDKxC'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/cruiz666/MediastreamPlatformSDKxC'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Carlos Ruiz' => 'cruiz@mediastre.am' }
-  s.source           = { :git => 'https://github.com/Carlos Ruiz/MediastreamPlatformSDKxC.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '9.0'
-
-  s.source_files = 'MediastreamPlatformSDKxC/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'MediastreamPlatformSDKxC' => ['MediastreamPlatformSDKxC/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.author           = { 'cruiz666' => 'ruizcarlos1985@gmail.com' }
+  s.source           = { :http => 'https://s3.amazonaws.com/mediastream-platform-sdk-ios/sdk/1.1.12/MediastreamPlatformSDKiOSxC.zip' }
+  s.swift_version    = ['5.2', '5.3', '5.3.1', '5.3.2', '5.3.3']
+  s.ios.deployment_target = '10.1'
+  s.vendored_frameworks = 'MediastreamPlatformSDKiOS.xcframework'
+  s.dependency 'GoogleAds-IMA-iOS-SDK', '3.11.4'
+  s.dependency 'YouboraLib', '6.3.9'
+  s.dependency 'YouboraAVPlayerAdapter', '6.3.5'
+#    s.dependency 'google-cast-sdk'
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
 end

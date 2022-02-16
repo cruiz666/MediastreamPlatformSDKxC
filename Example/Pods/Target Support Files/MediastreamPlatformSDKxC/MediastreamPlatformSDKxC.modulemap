@@ -1,0 +1,6 @@
+framework module MediastreamPlatformSDKxC {
+  umbrella header "MediastreamPlatformSDKxC-umbrella.h"
+
+  export *
+  module * { export * }
+}

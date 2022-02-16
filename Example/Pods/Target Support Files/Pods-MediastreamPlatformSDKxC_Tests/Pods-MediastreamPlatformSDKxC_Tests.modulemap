@@ -1,0 +1,6 @@
+framework module Pods_MediastreamPlatformSDKxC_Tests {
+  umbrella header "Pods-MediastreamPlatformSDKxC_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
