@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.author           = { 'cruiz666' => 'ruizcarlos1985@gmail.com' }
   s.source           = { :http => 'https://s3.amazonaws.com/mediastream-platform-sdk-ios/sdk/2.6.0/MediastreamPlatformSDKiOSxC.zip' }
   s.swift_version    = ['5.2', '5.3', '5.3.1', '5.3.2', '5.3.3']
-  s.ios.deployment_target = '12'
+  s.ios.deployment_target = '14'
   s.vendored_frameworks = 'MediastreamPlatformSDKiOS.xcframework'
   s.dependency 'GoogleAds-IMA-iOS-SDK', '3.24.0'
   s.dependency 'YouboraLib', '6.3.9'
