@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MediastreamPlatformSDKxC'
-  s.version          = '2.6.3'
+  s.version          = '2.6.4-alpha.04'
   s.summary          = 'MediastreamPlatformSDKiOSxC.'
   s.description      = <<-DESC
   Platform SDK solution for development on mobiles.
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/cruiz666/MediastreamPlatformSDKxC'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'cruiz666' => 'ruizcarlos1985@gmail.com' }
-  s.source           = { :http => 'https://s3.amazonaws.com/mediastream-platform-sdk-ios/sdk/2.6.3/MediastreamPlatformSDKiOSxC.zip' }
+  s.source           = { :http => 'https://s3.amazonaws.com/mediastream-platform-sdk-ios/sdk/2.6.4-alpha.04/MediastreamPlatformSDKiOSxC.zip' }
   s.swift_version    = ['5.2', '5.3', '5.3.1', '5.3.2', '5.3.3']
   s.ios.deployment_target = '14'
   s.vendored_frameworks = 'MediastreamPlatformSDKiOS.xcframework'
@@ -25,7 +25,8 @@ Pod::Spec.new do |s|
   s.dependency 'YouboraLib', '6.3.9'
   s.dependency 'YouboraAVPlayerAdapter', '6.3.5'
   s.dependency 'ComScore', '~> 6.15.0'
-  s.dependency 'ITGMediastreamPlatformAdapter', '~> 2.6.39'
+  s.dependency 'ITGMediastreamPlatformAdapter', '2.6.51'
+  s.dependency 'google-cast-sdk'
 #    s.dependency 'google-cast-sdk'
 #  s.pod_target_xcconfig = {
 #    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
