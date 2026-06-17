@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MediastreamPlatformSDKxC'
-  s.version          = '4.0.0'
+  s.version          = '4.0.0-alpha.01'
   s.summary          = 'MediastreamPlatformSDKiOSxC.'
   s.description      = <<-DESC
   Platform SDK solution for development on mobiles.
